@@ -1,6 +1,19 @@
 {
     "require": {
         "twilio/sdk": "5.22.0",
-        "vlucas/phpdotenv": "dev-master"
+        "vlucas/phpdotenv": "dev-master",
+        "ext-json": "*",
+        "ramsey/uuid": "^3.8",
+        "phpunit/phpunit": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TicTacTwilio\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TicTacTwilioTest\\": "test/"
+        }
     }
 }
